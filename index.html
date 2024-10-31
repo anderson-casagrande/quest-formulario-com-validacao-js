@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Validação</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="pagina">
+        <div class="esquerda">
+            <h1 class="pergunta">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+
+            <p class="sugestao">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                contato em menos de 24h.
+            </p>
+        </div>
+
+        <div class="direita">
+            <form id="formulario" class="formulario">
+                <div class="form-content">
+                    <input type="text" id="username" placeholder="Nome Completo *" class="obrigatorio">
+                    <p class="campo">Campo obrigatório</p>
+                </div>
+
+                <div class="form-content">
+                    <input type="email" placeholder="Email *" class="obrigatorio" id="email">
+                    <p class="campo">Campo obrigatório</p>
+                </div>
+
+                <div class="form-content">
+                    <input type="number" placeholder="Telefone *" id="telefone" class="obrigatorio">
+                    <p class="campo">Campo obrigatório</p>
+                </div>
+
+
+                <div class="form-content">
+                    <textarea placeholder="Mensagem *" class="obrigatorio textarea" id="mensagem"></textarea>
+                    <p class="campo">Campo obrigatório</p>
+                </div>
+
+                <p class="aviso">*campos obrigatórios</p>
+                <input type="submit" class="button" id="button">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
